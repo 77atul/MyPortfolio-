@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atul Yadav | Cloud & DevOps Engineer</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #020617;
+      --surface: #020617;
+      --card: #020617;
+      --border: #1e293b;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.15);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #020617, #020617);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+      padding: 40px 20px 80px;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 90px 20px 70px;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    .hero span {
+      color: var(--accent);
+    }
+
+    .hero p {
+      margin-top: 14px;
+      font-size: 1.15rem;
+      color: var(--muted);
+    }
+
+    .hero .tagline {
+      margin-top: 22px;
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 30px;
+      border: 1px solid var(--border);
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.9rem;
+    }
+
+    /* SECTIONS */
+    section {
+      margin-top: 90px;
+    }
+
+    h2 {
+      font-size: 2.1rem;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    h2::before {
+      content: "";
+      width: 6px;
+      height: 32px;
+      background: var(--accent);
+      border-radius: 4px;
+    }
+
+    /* CARDS */
+    .card {
+      background: linear-gradient(180deg, rgba(15,23,42,0.6), rgba(2,6,23,0.9));
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      transition: all 0.35s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: var(--accent);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.45);
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    /* SKILLS */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skills span {
+      padding: 9px 16px;
+      border-radius: 22px;
+      font-size: 0.85rem;
+      border: 1px solid var(--border);
+      background: rgba(15,23,42,0.6);
+    }
+
+    /* PROJECT TITLES */
+    .card h3 {
+      font-size: 1.15rem;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* DIAGRAM */
+    pre {
+      background: rgba(15,23,42,0.6);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 26px;
+      font-size: 0.9rem;
+      color: #cbd5f5;
+      overflow-x: auto;
+    }
+
+    /* FOOTER */
+    footer {
+      margin-top: 120px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+      opacity: 0.8;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Atul <span>Yadav</span></h1>
+    <p>Cloud & DevOps Engineer</p>
+    <div class="tagline">
+      AWS • Terraform • Jenkins • CI/CD • Cloud Security
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section>
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am a Cloud & DevOps enthusiast with hands-on experience in AWS Cloud,
+        Cloud Security, Terraform, and Jenkins. I have completed AWS Academy
+        certifications and worked as a Cloud & DevOps Trainee, gaining practical
+        exposure to infrastructure automation, CI/CD pipelines, and secure cloud
+        deployments.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2>Skills</h2>
+    <div class="card skills">
+      <span>AWS EC2</span>
+      <span>AWS S3</span>
+      <span>IAM</span>
+      <span>VPC</span>
+      <span>CloudWatch</span>
+      <span>Terraform</span>
+      <span>Jenkins</span>
+      <span>CI/CD</span>
+      <span>Git & GitHub</span>
+      <span>Linux</span>
+      <span>Cloud Security</span>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section>
+    <h2>Certifications</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>AWS Academy – Cloud Foundations</h3>
+        <p>Amazon Web Services • Feb 2025</p>
+      </div>
+
+      <div class="card">
+        <h3>AWS Academy – Cloud Security Foundations</h3>
+        <p>Amazon Web Services • Mar 2025</p>
+      </div>
+
+      <div class="card">
+        <h3>Cloud & DevOps Trainee</h3>
+        <p>Compozent • Jan 2025</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2>Hands-On Experience</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>CI/CD Pipeline with Jenkins</h3>
+        <p>
+          Designed and implemented an automated CI/CD pipeline using Jenkins
+          integrated with GitHub to deploy applications on AWS EC2, reducing
+          manual deployment effort and improving reliability.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Infrastructure Automation with Terraform</h3>
+        <p>
+          Provisioned and managed AWS infrastructure using Terraform,
+          enabling repeatable, version-controlled, and consistent deployments
+          across environments.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Atul Yadav • Cloud & DevOps Portfolio
+  </footer>
+</div>
+
+</body>
+</html>
